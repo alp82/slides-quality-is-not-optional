@@ -32,18 +32,16 @@
 
 					<p>Why it is ok to drop features</p>
 
-					<small>With exemplary JavaScript samples</small>
+					<small>With some practical examples in JavaScript</small>
 				</section>
 
 				<section>
 					<h2>Me</h2>
 
-					<a href="http://twitter.com/alperortac">@alperortac</a>
-
-					<ul>
-						<li>Web Engineer since early 200x</li>
-						<li><3 <strong>Python</strong> & <strong>JS</strong> <3</li>
-					</ul>
+					<p><a href="http://twitter.com/alperortac">@alperortac</a></p>
+					<p>Web Engineer since early 200x</p>
+					<p><3 <strong>Python</strong></p>
+					<p><3 <strong>JavaScript</strong></p>
 				</section>
 
 				<section>
@@ -59,10 +57,10 @@
 				<section>
 					<h2>Value</h2>
 
-					<p class="fragment fade-in-then-semi-out">💰 Something the customer is willing to pay for.</p>
-					<p class="fragment">💪 Something he is changing his behavior for.</p>
+					<p class="fragment fade-in-then-semi-out">💰 Something the customer is willing to pay for</p>
+					<p class="fragment">💪 Something he is changing his behavior for</p>
 
-					<aside>
+					<aside data-markdown>
 						* One-time, subscription, services, donations
 						* Integration in everyday life, market share
 					</aside>
@@ -71,36 +69,112 @@
 				<section>
 					<h2>Developer's Triangle</h2>
 
+					<h1>TODO: Time -> Cost</h1>
+
 					<img alt="dev-triangle" src="images/triangle.png" />
 				</section>
 
 				<section>
 					<img alt="dev-triangle" src="images/triangle.png" style="width: 5em;"/>
 
-					<h3>Choose Two</h3>
+					<h1>Choose Two</h1>
 				</section>
 
 				<section>
 					<h2>Quality</h2>
 
-					<ul>
-						<li class="fragment fade-in-then-semi-out">external: what the customer sees and perceives</li>
-						<li class="fragment">internal: what the engineer builds and maintains</li>
-					</ul>
+					<p>external: what the customer perceives and uses</p>
+					<p>internal: what the engineer builds and maintains</p>
+
+					<aside data-markdown>
+						* doctor: don't sterilize, just cut
+						* airplane: no need for full tank, just fly
+					</aside>
 				</section>
 
 				<section>
 					<h2>Professional Engineering</h2>
-					<h3>Internal quality is non-negotiable</h3>
 
-					<h1>🤜 🤛</h1>
+					<img alt="dev-triangle with quality" src="images/triangle-quality.png" style="width: 5em;"/>
 
-					<p>How to increase quality without</p>
-					<p>wasting too much time?</p>
+					<h3>Internal Quality is a constant</h3>
+					<p class="fragment">This is <strong>not</strong> negotiable</p>
+				</section>
+
+				<section>
+					<h2>Is high quality expensive?</h2>
+
+					<h3 class="fragment">depends</h3>
+
+					<div class="fragment">
+						<h1>🤜 🤛</h1>
+						<p>We need high performing teams</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>What makes a team awesome?</h2>
+
+					<p class="fragment fade-in-then-semi-out">Security</p>
+					<p class="fragment fade-in-then-semi-out">Respect</p>
+					<p class="fragment fade-in-then-semi-out">Focus</p>
+					<p class="fragment fade-in-then-semi-out">Collaboration</p>
+					<p class="fragment fade-in-then-semi-out">Agility</p>
+				</section>
+
+				<section>
+					<h2>How to be agile?</h2>
+
+					<p>Don't follow agile processes blindly</p>
+					<p>Instead understand their purpose</p>
+
+					<p class="fragment fade-in-then-semi-out">Cut big stories small</p>
+					<p class="fragment fade-in-then-semi-out">Create vertical stories</p>
+					<p class="fragment fade-in-then-semi-out">Build cross-functional teams</p>
+					<p class="fragment fade-in-then-semi-out">Work together on same context</p>
+
+					<aside>
+						* Understand Purpose: Sizing to cut stories smaller
+						* Work together: Pair & Mob Programming
+					</aside>
+				</section>
+
+				<section>
+					<h2>Mob Programming</h2>
+
+					<img alt="Mob Workplace" src="images/mob-programming.png" />
+
+					<p>Source: https://www.youtube.com/watch?v=dVqUcNKVbYg</p>
+				</section>
+
+				<section>
+					<h2>Poker in 60 minutes</h2>
+
+					<img alt="Poker" src="images/poker.jpg" />
+
+					<aside>
+						* gui?
+						* money?
+						* random?
+						* rules calling?
+						* rules best hand?
+						* ai?
+					</aside>
+				</section>
+
+				<section>
+					<h1>Value</h1>
+
+					<p>Perform agile</p>
+					<p>Be great to each other</p>
+					<p>Produce Quality</p>
 				</section>
 
 				<section>
 					<h2>Brainstorming</h2>
+
+					<p>How to increase quality without</p>
+					<p>wasting too much time?</p>
 
 					<h1>🛠️</h1>
 				</section>
@@ -151,6 +225,12 @@
 
 					<img alt="Rube Goldberg Machine" src="images/rubegoldberg.gif" />
 				</section>
+
+				<section>
+					<h1>Quality is not optional</h1>
+
+					<p>Thanks for listening</p>
+				</section>
 			</div>
 		</div>
 
@@ -162,9 +242,11 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				history: true,
+				showNotes: false,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true }
 				]
