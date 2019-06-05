@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					## Quality is not optional
+
+					Why it is ok to drop features
+				</section>
+
+				<section data-markdown>
+					## Me
+
+					[@alperortac](http://twitter.com/alperortac)
+
+					Web Engineer
+				</section>
+
+				<section data-markdown>
+					## Goal
+
+					We want to build value for our customer.
+
+					# ❤️
+
+					But what exactly is value?
+				</section>
+
+				<section data-markdown>
+					## Value
+
+					💰 Something the customer is willing to pay for.
+
+					💪 Or something he is changing his behavior for.
+				</section>
+
+				<section data-markdown>
+					## Developer's Triangle
+
+					![dev-triangle](images/triangle.png)
+
+					### Choose Two
+				</section>
+
+				<section data-markdown>
+					## Quality
+
+					* external: what the customer sees and perceives
+					* internal: what the engineer builds and maintains
+				</section>
+
+				<section data-markdown>
+					## Professional Engineering
+
+					### Internal quality is non-negotiable
+
+					# 🤜 🤛
+
+					How to increase quality without
+
+					wasting too much time?
+				</section>
+
+				<section data-markdown>
+					## Brainstorming
+
+					# 🛠️
+				</section>
+
+				<section data-markdown>
+					## Unit Tests
+
+					![Nope](images/tests.gif)
+
+					Jest, Karma
+				</section>
+
+				<section data-markdown>
+					## Integration Tests
+
+					![Nope](images/integration1.gif)
+<!--					![Nope](images/integration2.webp)-->
+
+					Cypress.io, TestCafé
+				</section>
+
+				<section data-markdown>
+					## Code Linting
+
+					![Nope](images/approved.webp)
+
+					ESLint, Prettier
+				</section>
+
+				<section data-markdown>
+					## Type Checks
+
+					![Nope](images/notvalid.gif)
+
+					TypeScript
+				</section>
+
+				<section data-markdown>
+					## Git hooks
+
+					![Nope](images/notgonnahappen.webp)
+
+					Husky
+				</section>
+
+				<section data-markdown>
+					## Continuous Integration
+
+					![Nope](images/rubegoldberg.gif)
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
