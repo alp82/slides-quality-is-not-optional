@@ -1,5 +1,11 @@
-img[alt=dev-triangle] {
+img[alt="dev-triangle"],
+img[alt="dev-triangle with quality"]
+{
   width: 70%;
   border: none !important;
   background: none !important;
+}
+
+.twitter-tweet {
+  margin: 0 auto;
 }
